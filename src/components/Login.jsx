@@ -64,23 +64,9 @@ const Login = () => {
           className="bg-white w-4xl p-5 rounded-md text-black"
         >
           <h2 className="text-3xl font-medium text-center">
-            Create Your Account
+            Login Now
           </h2>
           <div className="mt-6 space-y-4">
-            <div className="flex flex-col space-y-2">
-              <label className="font-semibold text-lg" htmlFor="name">
-                Name:
-              </label>
-              <input
-                className="outline-none border border-neutral-300 px-3 py-2 rounded-sm text-lg"
-                type="text"
-                placeholder="Enter your name:"
-                {...register("name")}
-              />
-              {errors.name && (
-                <p className="text-red-500">{errors.password.message}</p>
-              )}
-            </div>
             <div className="flex flex-col space-y-2">
               <label className="font-semibold text-lg" htmlFor="name">
                 Email:
