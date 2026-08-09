@@ -36,19 +36,15 @@ const Header = () => {
           >
             Login
           </NavLink>
+          <NavLink
+            to="/setinstructions"
+            className={({ isActive }) =>
+              isActive ? "text-blue-500 font-bold" : "text-gray-400"
+            }
+          >
+            Setinstructions
+          </NavLink>
         </nav>
-
-        {/* CTA */}
-        <NavLink
-          to="/signup"
-          className={({ isActive }) =>
-            isActive
-              ? "bg-blue-500 text-white font-bold px-5 py-2 rounded-lg"
-              : "bg-gray-200 text-gray-700 px-5 py-2 rounded-lg"
-          }
-        >
-          Get Started
-        </NavLink>
       </div>
     </header>
   );
